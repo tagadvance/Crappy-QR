@@ -9,8 +9,8 @@ qr = qrcode.QRCode(
     box_size=10,
     border=4,
 )
-qr.add_data('Some data')
+qr.add_data('https://github.com/tagadvance/crappy-qr')
 qr.make(fit=True)
 
 image = qr.make_image(back_color='white', fill_color='brown', image_factory=CrappyImage)
-image.save('/tmp/qr-test.jpeg', 'PNG')
+image.save('/tmp/qr-test.png', 'PNG')
