@@ -29,8 +29,8 @@ python3 -m venv virt
 source ./virt/bin/activate
 pip3 install wheel
 pip3 install .
-./qr/crappy.py
-xdg-open /tmp/qr-test.jpeg
+./qr/crappy.py --data 'foo' --out '/tmp/foo.png'
+xdg-open /tmp/foo.png
 deactivate
 ```
 
